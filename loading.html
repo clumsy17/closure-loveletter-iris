@@ -30,6 +30,34 @@
 	<a id= "github" href="github.html"> 
 		<img id="github_photo" src="img/github.png" rel="thumbnail gitHub" alt="github">
 	</a>
+		<script>
+document.addEventListener("keydown", function (e) {
+    // Ctrl + U
+    if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+        return false;
+    }
+
+    // Ctrl + Shift + I
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+        e.preventDefault();
+        return false;
+    }
+
+    // Ctrl + Shift + C
+    if (e.ctrlKey && e.shiftKey && e.key === "C") {
+        e.preventDefault();
+        return false;
+    }
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+        return false;
+    }
+});
+</script>
+
 	</main>
 	
 
