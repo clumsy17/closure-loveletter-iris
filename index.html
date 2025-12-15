@@ -53,7 +53,19 @@ document.addEventListener("keydown", function (e) {
     }
 });
 </script>
-
+<script>
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+</script>
+<script>
+setInterval(function () {
+    if (window.outerWidth - window.innerWidth > 160 ||
+        window.outerHeight - window.innerHeight > 160) {
+        document.body.innerHTML = "<h1>Akses diblokir</h1>";
+    }
+}, 1000);
+</script>
 	</main>
 	
 
